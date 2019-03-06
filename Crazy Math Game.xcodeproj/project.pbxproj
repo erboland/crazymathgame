@@ -14,6 +14,9 @@
 		000237251D080872002D87F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000237231D080872002D87F9 /* LaunchScreen.storyboard */; };
 		000237301D080873002D87F9 /* Crazy_Math_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002372F1D080873002D87F9 /* Crazy_Math_GameTests.swift */; };
 		0002373B1D080873002D87F9 /* Crazy_Math_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002373A1D080873002D87F9 /* Crazy_Math_GameUITests.swift */; };
+		0002374A1D080F3C002D87F9 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000237491D080F3C002D87F9 /* MathViewController.swift */; };
+		00F2D8D31D1A5DD3005316EC /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2D8D21D1A5DD3005316EC /* ResultsTableViewController.swift */; };
+		00F2D8D51D1A5E07005316EC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2D8D41D1A5E07005316EC /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		000237361D080873002D87F9 /* Crazy Math GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crazy Math GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0002373A1D080873002D87F9 /* Crazy_Math_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crazy_Math_GameUITests.swift; sourceTree = "<group>"; };
 		0002373C1D080873002D87F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000237491D080F3C002D87F9 /* MathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
+		00F2D8D21D1A5DD3005316EC /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		00F2D8D41D1A5E07005316EC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,12 @@
 		000237191D080872002D87F9 /* Crazy Math Game */ = {
 			isa = PBXGroup;
 			children = (
-				0002371A1D080872002D87F9 /* AppDelegate.swift */,
+				000237481D08088B002D87F9 /* Supporting Files */,
 				0002371C1D080872002D87F9 /* ViewController.swift */,
 				0002371E1D080872002D87F9 /* Main.storyboard */,
-				000237211D080872002D87F9 /* Assets.xcassets */,
-				000237231D080872002D87F9 /* LaunchScreen.storyboard */,
-				000237261D080872002D87F9 /* Info.plist */,
+				000237491D080F3C002D87F9 /* MathViewController.swift */,
+				00F2D8D21D1A5DD3005316EC /* ResultsTableViewController.swift */,
+				00F2D8D41D1A5E07005316EC /* TableViewCell.swift */,
 			);
 			path = "Crazy Math Game";
 			sourceTree = "<group>";
@@ -123,6 +129,17 @@
 				0002373C1D080873002D87F9 /* Info.plist */,
 			);
 			path = "Crazy Math GameUITests";
+			sourceTree = "<group>";
+		};
+		000237481D08088B002D87F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0002371A1D080872002D87F9 /* AppDelegate.swift */,
+				000237211D080872002D87F9 /* Assets.xcassets */,
+				000237231D080872002D87F9 /* LaunchScreen.storyboard */,
+				000237261D080872002D87F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F2D8D51D1A5E07005316EC /* TableViewCell.swift in Sources */,
+				00F2D8D31D1A5DD3005316EC /* ResultsTableViewController.swift in Sources */,
 				0002371D1D080872002D87F9 /* ViewController.swift in Sources */,
+				0002374A1D080F3C002D87F9 /* MathViewController.swift in Sources */,
 				0002371B1D080872002D87F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +502,7 @@
 				000237411D080873002D87F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		000237421D080873002D87F9 /* Build configuration list for PBXNativeTarget "Crazy Math GameTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +511,7 @@
 				000237441D080873002D87F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		000237451D080873002D87F9 /* Build configuration list for PBXNativeTarget "Crazy Math GameUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +520,7 @@
 				000237471D080873002D87F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
